@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <title>Hello, world!</title>
+</head>
+<body>
+
+<!--    <img src="" id="prvfle" style="height: 20; width: 20;">
+<label>Upload Image</label>
+<input type="file" onchange="shwPrvew();">
+
+<script type="text/javascript">
+ function shwPrvew()
+ {
+
+if(event.target.files.length > 0)
+{
+  var src = URL.createObjectURL(event.target.files[0]);
+  var preview = document.getElementById("prvfle");
+  preview.src = src;
+  preview.style.display = "block";
+}
+}
+</script> -->
+
+<center><u style="color: darkred;">DETAILS-FORM</u></center><br> 
+
+<div class="container">
+<div class="row">
+
+<div class="col">
+<form>
+
+<div class="mb-3">
+<label class="form-label">Candidate Name</label>
+<input type="text" class="form-control" id="candidatename">
+</div>
+
+<div class="mb-3">
+<label class="form-label">Email</label>
+<input type="text" class="form-control" id="email">
+</div>
+
+<div class="mb-3">
+<label class="form-label">Contact Number</label>
+<input type="number" class="form-control" id="candidatecontact">
+</div>
+
+<div class="mb-3">
+<label class="form-label">Address</label>
+<input type="text" class="form-control" id="candidateaddress">
+</div>
+
+<div class="mb-3">
+<img src="" id="prvfle" style="height: 400px; width: 700px;">
+<label class="form-label">Upload Image</label>
+<input type="file" class="form-control" id="candiUpolImg" onchange="shwPrvew();">
+</div>
+
+<button type="button" class="btn btn-primary form-control" id="studentdetail" onclick="fetchCandidateDetail()">Get Candidate Detail</button>
+
+</form>
+</div>
+ 
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  
+</body>
+</html>
+
+<script type="text/javascript">
+
+var candidatename = "Mehrab Alam";
+var email = "mehrabalambth";
+var candidatecontact = "6209514930";
+var candidateaddress = "Dargah Mohalla, Bettiah";
+
+function fetchCandidateDetail()
+{
+  var candidatetextvalue = document.getElementById("candidatename");
+  var emailtextvalue = document.getElementById("email");
+  var contacttextvalue = document.getElementById("candidatecontact");
+  var addresstextvalue = document.getElementById("candidateaddress");
+
+  candidatetextvalue.value = candidatename;
+  emailtextvalue.value = email;
+  contacttextvalue.value = candidatecontact;
+  addresstextvalue.value = candidateaddress;
+}
+
+ function shwPrvew()
+ {
+
+if(event.target.files.length > 0)
+{
+  var src = URL.createObjectURL(event.target.files[0]);
+  var preview = document.getElementById("prvfle");
+  preview.src = src;
+  preview.style.display = "block";
+}
+}
+</script>

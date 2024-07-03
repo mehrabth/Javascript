@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+<title>Hello, Average!</title>
+</head> 
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<div class="container-fluid">
+  <a class="navbar-brand" href="#"><h1>Calculation</h1></a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="add.html"><h3>Addition</h3></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="subs.html"><h3>Substraction</h3></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="multi.html"><h3>Multiplication</h3></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="div.html"><h3>Division</h3></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="average.html"><h3>Average</h3></a>
+      </li>
+    </ul>
+  </div>
+</div>
+</nav>
+
+<div class="container">
+<div class="row">
+<div class="col">
+
+<form>
+<div class="mb-3">
+<label for="exampleaverage1" class="form-label">Average 1</label>
+<input type="number" class="form-control" id="average1">
+</div>
+
+<div class="mb-3">
+<label for="exampleaverage2" class="form-label">Average 2</label>
+<input type="number" class="form-control" id="average2">
+</div>
+
+<div class="mb-3">
+<label for="exampleaverage3" class="form-label">Average 3</label>
+<input type="number" class="form-control" id="average3">
+</div>
+
+<div class="mb-3">
+<label for="exampleaverage4" class="form-label">Average 4</label>
+<input type="number" class="form-control" id="average4">
+</div>
+
+<div class="mb-3">
+<label for="exampleaverage5" class="form-label">Average 5</label>
+<input type="number" class="form-control" id="average5">
+</div>
+
+<div class="mb-3">
+<label for="exampleInputResult" class="form-label">Result</label>
+<input type="number" class="form-control" id="Result5" readonly>
+</div>
+
+<button type="button" class="btn btn-primary form-control" id="Submit" onclick="AveSubmitDetail()">Submit</button>
+</form>
+</div>
+</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>
+
+<script type="text/javascript">
+
+function AveSubmitDetail()
+{
+var numbers1 = document.getElementById('average1');
+var numbers2 = document.getElementById('average2');
+var numbers3 = document.getElementById('average3');
+var numbers4 = document.getElementById('average4');
+var numbers5 = document.getElementById('average5');
+var resulted1 = document.getElementById('Result5');
+
+resulted1.value = (Number(numbers1.value)+Number(numbers2.value)+Number(numbers3.value)+Number(numbers4.value)+Number(numbers5.value))/2;
+}
+
+</script>
